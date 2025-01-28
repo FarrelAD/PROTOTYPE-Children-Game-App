@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prototye_children_game_app/games/ColorMatching/ColorMatching.dart';
-import 'package:prototye_children_game_app/games/ColoringGame.dart';
-import 'package:prototye_children_game_app/games/CountingGame.dart';
-import 'package:prototye_children_game_app/games/PuzzleGame.dart';
+import 'package:prototye_children_game_app/games/ComingSoon.dart';
 
 class MenuPage extends StatelessWidget {
   const MenuPage({super.key});
@@ -10,10 +8,10 @@ class MenuPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<Map<String, dynamic>> gamesOption = [
-      {'name': 'Puzzle', 'img': 'assets/img/puzzle.jpg', 'widget': PuzzleGame()},
+      {'name': 'Puzzle', 'img': 'assets/img/puzzle.jpg', 'widget': ComingSoon()},
       {'name': 'Tebak warna', 'img': 'assets/img/color_matching.jpg', 'widget': ColorMatching()},
-      {'name': 'Berhitung', 'img': 'assets/img/counting.webp', 'widget': CountingGame()},
-      {'name': 'Menggambar', 'img': 'assets/img/coloring.jpg', 'widget': ColoringGame()}
+      {'name': 'Berhitung', 'img': 'assets/img/counting.webp', 'widget': ComingSoon()},
+      {'name': 'Menggambar', 'img': 'assets/img/coloring.jpg', 'widget': ComingSoon()}
     ];
 
     return Scaffold(

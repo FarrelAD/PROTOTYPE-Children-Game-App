@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class GamePage extends StatelessWidget {
+class PuzzleGame extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Game page'),
       ),
-      body: Text("Hey I'm game page!"),
+      body: Text("Puzzle game"),
     );
   }
 

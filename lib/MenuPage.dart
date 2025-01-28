@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:prototye_children_game_app/GamePage.dart';
+import 'package:prototye_children_game_app/games/ColorMatching.dart';
+import 'package:prototye_children_game_app/games/ColoringGame.dart';
+import 'package:prototye_children_game_app/games/CountingGame.dart';
+import 'package:prototye_children_game_app/games/PuzzleGame.dart';
 
 class MenuPage extends StatelessWidget {
-  final List<Map<String, String>> gamesOption = [
-    {'name': 'Puzzle', 'img': 'assets/img/puzzle.jpg'},
-    {'name': 'Tebak warna', 'img': 'assets/img/color_matching.jpg'},
-    {'name': 'Berhitung', 'img': 'assets/img/counting.webp'},
-    {'name': 'Menggambar', 'img': 'assets/img/coloring.jpg'}
+  final List<Map<String, dynamic>> gamesOption = [
+    {'name': 'Puzzle', 'img': 'assets/img/puzzle.jpg', 'widget': PuzzleGame()},
+    {'name': 'Tebak warna', 'img': 'assets/img/color_matching.jpg', 'widget': ColorMatching()},
+    {'name': 'Berhitung', 'img': 'assets/img/counting.webp', 'widget': CountingGame()},
+    {'name': 'Menggambar', 'img': 'assets/img/coloring.jpg', 'widget': ColoringGame()}
   ];
 
   @override
@@ -37,10 +40,12 @@ class MenuPage extends StatelessWidget {
               itemBuilder: (context, index) {
                 return GestureDetector(
                   onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => GamePage()),
-                    );
+                    if (index >= 0 && index < gamesOption.length) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => gamesOption[index]['widget'] as Widget),
+                      );
+                    }
                   },
                   child: Card(
                     shape: RoundedRectangleBorder(
@@ -62,7 +67,7 @@ class MenuPage extends StatelessWidget {
                               child: Text(
                                 gamesOption[index]['name']!,
                                 style: TextStyle(
-                                    fontSize: 18,
+                                    fontSize: 22,
                                     fontWeight: FontWeight.bold,
                                     color: Colors.white,
                                     shadows: [

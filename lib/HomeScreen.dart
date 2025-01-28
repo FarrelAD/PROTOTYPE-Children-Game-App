@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prototye_children_game_app/MenuPage.dart';
 
 
 class HomeScreen extends StatelessWidget {
@@ -40,7 +41,9 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                  print('Button pressed!');
+                  Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => MenuPage())
+                  );
                 },
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(

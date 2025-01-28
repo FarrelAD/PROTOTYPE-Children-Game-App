@@ -5,6 +5,8 @@ import 'package:prototye_children_game_app/games/ColorMatching/ColorCircle.dart'
 
 
 class ColorMatching extends StatefulWidget {
+  const ColorMatching({super.key});
+
   @override
   _ColorMatching createState() => _ColorMatching();
 }

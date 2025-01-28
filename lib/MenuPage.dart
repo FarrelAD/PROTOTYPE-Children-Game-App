@@ -5,15 +5,17 @@ import 'package:prototye_children_game_app/games/CountingGame.dart';
 import 'package:prototye_children_game_app/games/PuzzleGame.dart';
 
 class MenuPage extends StatelessWidget {
-  final List<Map<String, dynamic>> gamesOption = [
-    {'name': 'Puzzle', 'img': 'assets/img/puzzle.jpg', 'widget': PuzzleGame()},
-    {'name': 'Tebak warna', 'img': 'assets/img/color_matching.jpg', 'widget': ColorMatching()},
-    {'name': 'Berhitung', 'img': 'assets/img/counting.webp', 'widget': CountingGame()},
-    {'name': 'Menggambar', 'img': 'assets/img/coloring.jpg', 'widget': ColoringGame()}
-  ];
+  const MenuPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final List<Map<String, dynamic>> gamesOption = [
+      {'name': 'Puzzle', 'img': 'assets/img/puzzle.jpg', 'widget': PuzzleGame()},
+      {'name': 'Tebak warna', 'img': 'assets/img/color_matching.jpg', 'widget': ColorMatching()},
+      {'name': 'Berhitung', 'img': 'assets/img/counting.webp', 'widget': CountingGame()},
+      {'name': 'Menggambar', 'img': 'assets/img/coloring.jpg', 'widget': ColoringGame()}
+    ];
+
     return Scaffold(
       body: Container(
         padding: EdgeInsets.all(20),

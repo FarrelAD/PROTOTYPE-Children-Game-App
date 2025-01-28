@@ -6,7 +6,7 @@ class ColorCircle extends StatelessWidget {
   final ColorOption targetColor;
   final Function() updateAnswer;
 
-  ColorCircle({required this.color, required this.targetColor, required this.updateAnswer});
+  const ColorCircle({super.key, required this.color, required this.targetColor, required this.updateAnswer});
 
   @override
   Widget build(BuildContext context) {

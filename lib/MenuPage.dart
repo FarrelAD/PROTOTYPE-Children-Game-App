@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:prototye_children_game_app/games/ColorMatching.dart';
+import 'package:prototye_children_game_app/games/ColorMatching/ColorMatching.dart';
 import 'package:prototye_children_game_app/games/ColoringGame.dart';
 import 'package:prototye_children_game_app/games/CountingGame.dart';
 import 'package:prototye_children_game_app/games/PuzzleGame.dart';

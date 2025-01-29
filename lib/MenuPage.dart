@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:prototye_children_game_app/games/ColorMatching/ColorMatching.dart';
 import 'package:prototye_children_game_app/games/ComingSoon.dart';
+import 'package:prototye_children_game_app/games/Puzzle/PuzzleGame.dart';
 
 class MenuPage extends StatelessWidget {
   const MenuPage({super.key});
@@ -8,7 +9,7 @@ class MenuPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<Map<String, dynamic>> gamesOption = [
-      {'name': 'Puzzle', 'img': 'assets/img/puzzle.jpg', 'widget': ComingSoon()},
+      {'name': 'Puzzle', 'img': 'assets/img/puzzle.jpg', 'widget': PuzzleGame()},
       {'name': 'Tebak warna', 'img': 'assets/img/color_matching.jpg', 'widget': ColorMatching()},
       {'name': 'Berhitung', 'img': 'assets/img/counting.webp', 'widget': ComingSoon()},
       {'name': 'Menggambar', 'img': 'assets/img/coloring.jpg', 'widget': ComingSoon()}

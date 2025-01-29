@@ -41,7 +41,7 @@ class _ColorMatchingState extends State<ColorMatching> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            content: Text('You\'re correct!'),
+            content: Text('YEAY!! Kamu benar!'),
             actions: [
               TextButton(
                 child: Text('OK'),

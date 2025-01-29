@@ -8,12 +8,12 @@ class ColorMatching extends StatefulWidget {
   const ColorMatching({super.key});
 
   @override
-  _ColorMatching createState() => _ColorMatching();
+  _ColorMatchingState createState() => _ColorMatchingState();
 }
 
 
 
-class _ColorMatching extends State<ColorMatching> {
+class _ColorMatchingState extends State<ColorMatching> {
   final List<ColorOption> _listColor = [
     ColorOption.red,
     ColorOption.blue,

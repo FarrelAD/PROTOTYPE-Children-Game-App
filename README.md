@@ -1,16 +1,31 @@
-# prototye_children_game_app
+# Protoype-children-game-app
 
-A prototype of children game app
+A simple prototype game built with Flutter, designed with a sensory-friendly approach for children. This game can be played on mobile phones, web, and desktop.
 
-## Getting Started
+Currently, only two mini-games have been successfully developed:
+- Color Matching
+- Puzzle Game
 
-This project is a starting point for a Flutter application.
+## Result
 
-A few resources to get you started if this is your first Flutter project:
+### Home page
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Home page](docs/img/home_page.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Menu page
+
+![Menu page](docs/img/menu_page.png)
+
+### Puzzle game
+
+![Puzzle game](docs/img/puzzle_game.png)
+
+### Color matching game
+
+![Color matching game](docs/img/color_matching_game.png)
+
+## Under Development
+
+For some mini-games that are not yet finished, you will see this page appear.
+
+![Under development](docs/img/under_development.png)
